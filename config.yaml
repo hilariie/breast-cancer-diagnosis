@@ -1,0 +1,46 @@
+# Go through the breast_cancer.html file to better understand the options available
+
+# data split
+split: 0.3
+
+# 1: 'cleaned data' | 2: 'systematically_reduced_data' | 3: 'pca' | 4: 'normal distributed data'
+data_preprocessing: 4
+
+# number of components to reduce systematic pca to
+system_pca: 2
+
+# number of components to reduce to
+pca: 7
+
+norm_pca: 1
+
+
+# data to remove skewness
+# 1: 'cleaned data' | 2: balanced data | 3: 'systematically_reduced_data' | 4: 'pca'
+norm_data: 4
+
+# 1: [XGBoost, RFC, LR, SVC] | 2: Neural Network
+model: 2
+
+# validation size
+val_split: 0.2
+
+# Neural Network parameters
+optimizer: 'SGD'
+blocks:
+ - 128
+ - 32
+loss: 'sparse_categorical_crossentropy'
+epochs: 100
+batch_size: 10
+dropout: 0.2
+regu: 0.05
+activation: 'softmax'
+patience: 3
+first: 512
+verbose: 1
+monitor: 'val_loss'
+ 
+
+# plot NN training history
+plot: True
