@@ -5,7 +5,7 @@ The objective of this project is to develop an effective breast cancer diagnosti
 * breast_cancer.ipynb - This file contains the jupyter notebook code in which the experiments were done.
 * preprocessing.py - This file contains the neccessary functions for preprocessing the dataset
 * modeling.py - This script contains the neccessary functions for creating, training and evaluating models.
-* breast_cancer.py - This script is called to preprocess, train, and display evaluation of models. This script is configured via the `config.yaml` file.
+* main.py - This script is called to preprocess, train, and display evaluation of models. This script is configured via the `config.yaml` file.
 * config.yaml - This file holds neccessary configurations to be made regarding the pre-processing steps and models (including parameters) to experiment.
 
 ## Dependacies
